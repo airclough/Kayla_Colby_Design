@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'nexa-bold';
+  src: url('fonts/nexa_bold-webfont.eot');
+  src: url('fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/nexa_bold-webfont.woff') format('woff'),
+       url('fonts/nexa_bold-webfont.ttf') format('truetype'),
+       url('fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa-light';
+  src: url('fonts/nexa_light-webfont.eot');
+  src: url('fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/nexa_light-webfont.woff') format('woff'),
+       url('fonts/nexa_light-webfont.ttf') format('truetype'),
+       url('fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot');
+  src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.woff') format('woff'),
+      url('fonts/icomoon.ttf') format('truetype'),
+      url('fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1% 0 2.5% 0;
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+body {
+  color: #333;
+  font-family: "nexa-light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  z-index: 7777;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+}
+
+header > .inner {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header .logo,
+header nav {
+  float: left;
+  position: relative;
+}
+
+header .logo,
+header nav a {
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+}
+
+header .logo {
+  height: 120px;
+  width: 120px;
+  background-image: url("../img/kc-logo-teal.png");
+  background-size: cover;
+  margin: 40px 0 0 0;
+}
+
+header nav {
+  margin-left: 40px;
+}
+
+header nav a {
+  position: relative;
+  color: #333;
+  font-size: 2em;
+  text-decoration: none;
+  line-height: 200px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+header nav a::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: #7bccc1;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+header nav a:hover::after,
+header nav a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+header .social {
+  float: right;
+}
+
+header .social a {
+  color: #ccc;
+  text-decoration: none;
+  line-height: 200px;
+  margin-left: 10px;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+}
+
+header .social a:hover {
+  color: #7bccc1;
+}
+
+header.transition {
+  height: 100px;
+  background: #f5f5f5;
+}
+
+header.transition .inner nav a {
+  line-height: 100px;
+}
+
+header.transition .inner .logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px 0 0 0;
+}
+
+header.transition .inner nav a {
+  font-size: 1.5em;
+}
+
+header.transition .social a {
+  line-height: 100px;
+}
+
+footer {
+  height: 2em;
+  color: #f5f5f5;
+  line-height: 2em;
+  background: #7bccc1;
+}
+
+footer .container {
+  width: 90%;
+  max-width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+
+  header .logo,
+  header nav {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header .logo {
+    margin-top: 10px;
+  }
+
+  header nav {
+    height: 70px;
+  }
+
+  header nav a {
+    line-height: 70px;
+    margin: 0 5px;
+  }
+
+  header .social {
+    display: none;
+  }
+
+  header.transition .inner nav {
+    height: 30px;
+  }
+
+  header.transition .inner nav a {
+    line-height: 30px;
+  }
+
+  header.transition .inner .logo {
+    height: 60px;
+    width: 60px;
+    margin: 10px auto 0 auto;
+  }
+
+  header.transition .inner nav a {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  header nav a {
+    font-size: 1.5em;
+  }
+
+}
+
+/**
+ * icons
+ */
+
+.icon-facebook,
+.icon-twitter,
+.icon-linkedin,
+.icon-expand,
+.icon-close {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  speak: none;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-facebook:before {
+  content: "\e000";
+}
+
+.icon-twitter:before {
+  content: "\e001";
+}
+
+.icon-linkedin:before {
+  content: "\e002";
+}
+
+.icon-expand:before {
+  content: "\e003";
+}
+
+.icon-close:before {
+  content: "\e004";
+}

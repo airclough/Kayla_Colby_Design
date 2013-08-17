@@ -1,0 +1,250 @@
+#portfolio {
+  margin-top: 20px;
+}
+
+#portfolio .container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+#portfolio .header {
+  overflow: hidden;
+}
+
+#portfolio .header h2 {
+  display: inline-block;
+  width:  50%;
+  font-family: "nexa-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#portfolio .header ul {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+
+#portfolio .header ul li {
+  display: inline;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+#portfolio .header ul li::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: #7bccc1;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#portfolio .header ul li:hover::after,
+#portfolio .header ul li:hover::after {
+  opacity: 1;
+
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#portfolio .filter {
+  border-bottom: 5px solid #7bccc1;
+}
+
+#portfolio .item-container {
+  width: 95%;
+  max-width: 1080.888888889px;
+  margin: 0 auto;
+}
+
+#portfolio .item {
+  float: left;
+  width: 28.333333333%;
+  margin: 0 2.5% 5% 2.5%;
+}
+
+#portfolio .item figure {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#portfolio .item figure img {
+  opacity: 0.9;
+  width: 100%;
+  display: block;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+}
+
+#portfolio figure figcaption {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  height: 2em;
+  width: 100%;
+  color: #f5f5f5;
+  line-height: 2em;
+  background: #7bccc1;
+  padding: 0 10px;
+
+  -webkit-transition: -webkit-transform 0.25s;
+     -moz-transition: -moz-transform 0.25s;
+       -o-transition: -o-transform 0.25s;
+          transition: transform 0.25s;
+
+  -webkit-transform: translateY(100%);
+     -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+       -o-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+#portfolio figure:hover figcaption {
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#portfolio figure:hover img {
+  opacity: 1;
+}
+
+#portfolio figure figcaption span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 2em;
+  line-height: 2em;
+}
+
+#portfolio .hide {
+  display: none;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  max-height: 90%;
+  width: auto;
+  max-width: 1024px;
+  background: #7bccc1;
+  overflow: hidden;
+  z-index: 9999;
+
+  -webkit-transition: opacity 0.25s;
+     -moz-transition: opacity 0.25s;
+       -o-transition: opacity 0.25s;
+          transition: opacity 0.25s;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+       -o-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #f5f5f5;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.75);
+  z-index: 8888;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+}
+
+.overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+  #portfolio .header h2 {
+    font-size: 2em;
+  }
+
+  #portfolio .item {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  #portfolio .header ul {
+    display: none;
+  }
+
+  #portfolio .item {
+    width: 95%;
+  }
+
+  .modal,
+  .overlay {
+    display: none;
+  }
+
+}

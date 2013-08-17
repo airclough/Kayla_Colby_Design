@@ -1,0 +1,42 @@
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.half,
+.third,
+.quarter {
+  float: left;
+  margin: 0 5% 5% 0;
+}
+
+.full {
+  width: 100%;
+}
+
+.half {
+  width: 47.5%;
+}
+
+.third {
+  width: 30%;
+}
+
+.quarter {
+  width: 21.25%;
+}
+
+.last {
+  margin: 0;
+}

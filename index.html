@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/about_contact.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner clearfix">
+        <div class="logo"></div>
+        <nav>
+          <a href="#portfolio">portfolio</a>
+          <a href="#about">about</a>
+          <a href="#contact">contact</a>
+        </nav>
+        <div class="social">
+          <a href="#"><span class="icon-facebook"></span></a>
+          <a href="#"><span class="icon-twitter"></span></a>
+          <a href="#"><span class="icon-linkedin"></span></a>
+        </div>
+      </div>
+    </header>
+    <section id="slider" class="clearfix">
+      <div class="slide">
+      <span class="lead">this is a cat lead-in...</span>
+        <img src="http://placekitten.com/1024/400" />
+      </div>
+      <div class="slide">
+        <span class="lead">...as is this</span>
+        <img src="http://placekitten.com/2048/800" />
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="header container clearfix">
+        <h2>Portfolio</h2
+        ><ul>
+        <!-- eliminating phantom whitespace after h2 -->
+          <li id="all" class="filter">all</li>
+          <li id="identity">identity</li>
+          <li id="clothing">clothing</li>
+          <li id="print">print</li>
+        </ul>
+        <hr>
+      </div>
+      <div class="item-container clearfix">
+        <div class="item" data-cat="identity" data-modal-img="http://placekitten.com/400/400">
+          <figure>
+            <img src="http://placekitten.com/400/400" />
+            <figcaption>
+              <h3>identity</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="identity" data-modal-img="http://placekitten.com/400/400">
+          <figure>
+            <img src="http://placekitten.com/400/400" />
+            <figcaption>
+              <h3>identity</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="identity" data-modal-img="http://placekitten.com/400/400">
+          <figure>
+            <img src="http://placekitten.com/400/400" />
+            <figcaption>
+              <h3>identity</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="identity" data-modal-img="http://placekitten.com/400/400">
+          <figure>
+            <img src="http://placekitten.com/400/400" />
+            <figcaption>
+              <h3>identity</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="clothing" data-modal-img="http://placekitten.com/500/500">
+          <figure>
+            <img src="http://placekitten.com/500/500" />
+            <figcaption>
+              <h3>clothing</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="clothing" data-modal-img="http://placekitten.com/500/500">
+          <figure>
+            <img src="http://placekitten.com/500/500" />
+            <figcaption>
+              <h3>clothing</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="print" data-modal-img="http://placekitten.com/600/600">
+          <figure>
+            <img src="http://placekitten.com/600/600" />
+            <figcaption>
+              <h3>print</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="print" data-modal-img="http://placekitten.com/600/600">
+          <figure>
+            <img src="http://placekitten.com/600/600" />
+            <figcaption>
+              <h3>print</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="item" data-cat="print" data-modal-img="http://placekitten.com/600/600">
+          <figure>
+            <img src="http://placekitten.com/600/600" />
+            <figcaption>
+              <h3>print</h3>
+              <span class="icon-expand"></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="header container clearfix">
+        <h2>about</h2>
+        <hr>
+        <p>coming soon...</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="header container clearfix">
+        <h2>contact</h2>
+        <hr>
+        <p>coming soon...</p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <span>Kayla Colby Design</span>
+      </div>
+    </footer>
+    <div class="modal">
+      <span class="close icon-close"></span>
+      <div class="image"></div>
+    </div>
+    <div class="overlay"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/header.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/modal.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

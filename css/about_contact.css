@@ -1,0 +1,27 @@
+#about,
+#contact {
+  height: 400px;
+  padding-top: 110px;
+}
+
+#about .container,
+#contact .container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+#about .header,
+#contact .header {
+  overflow: hidden;
+}
+
+#about .header h2,
+#contact .header h2 {
+  display: inline-block;
+  width:  50%;
+  font-family: "nexa-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
