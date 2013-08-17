@@ -1,4 +1,4 @@
-kayla
+Kayla Colby Design
 =====
 
-Kayla Colby Design
+...will update soon, Kayla.
