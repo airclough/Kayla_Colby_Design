@@ -1,5 +1,5 @@
 #portfolio {
-  margin-top: 20px;
+  padding-top: 25px;
 }
 
 #portfolio .container {
@@ -93,6 +93,17 @@
   cursor: pointer;
 }
 
+#portfolio .item figure div {
+  opacity: 0.9;
+  width: 100%;
+  background-size: cover;
+
+  -webkit-transition: all 0.25s;
+     -moz-transition: all 0.25s;
+       -o-transition: all 0.25s;
+          transition: all 0.25s;
+}
+
 #portfolio .item figure img {
   opacity: 0.9;
   width: 100%;
@@ -134,6 +145,10 @@
       -ms-transform: translateY(0px);
        -o-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+#portfolio figure:hover div {
+  opacity: 1;
 }
 
 #portfolio figure:hover img {

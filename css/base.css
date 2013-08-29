@@ -55,16 +55,21 @@ h1,
 h2,
 h3,
 ul,
-li {
+li,
+p {
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: #7bccc1;
 }
 
 hr {
   display: block;
   height: 1px;
   padding: 0;
-  margin: 1% 0 2.5% 0;
+  margin: 0 0 25px 0;
   border: 0;
   border-top: 1px solid #e5e5e5;
 }
@@ -209,10 +214,9 @@ header.transition .social a {
 }
 
 footer {
-  height: 2em;
   color: #f5f5f5;
-  line-height: 2em;
   background: #7bccc1;
+  padding: 10px 0;
 }
 
 footer .container {
@@ -220,6 +224,19 @@ footer .container {
   max-width: 1024px;
   text-align: center;
   margin: 0 auto;
+}
+
+footer .container div:nth-of-type(2) {
+  font-size: 0.5em;
+}
+
+footer .container div:nth-of-type(2) a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+footer .container div:nth-of-type(2) a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -280,8 +297,14 @@ footer .container {
  * icons
  */
 
+.icon-email,
+.icon-gmail,
+.icon-gmail-alt,
 .icon-facebook,
+.icon-facebook-alt,
 .icon-twitter,
+.icon-twitter-alt,
+.icon-instagram,
 .icon-linkedin,
 .icon-expand,
 .icon-close {
@@ -296,22 +319,46 @@ footer .container {
   -webkit-font-smoothing: antialiased;
 }
 
-.icon-facebook:before {
+.icon-email:before {
   content: "\e000";
 }
 
-.icon-twitter:before {
+.icon-gmail:before {
   content: "\e001";
 }
 
-.icon-linkedin:before {
+.icon-gmail-alt:before {
   content: "\e002";
 }
 
-.icon-expand:before {
+.icon-facebook:before {
   content: "\e003";
 }
 
-.icon-close:before {
+.icon-facebook-alt:before {
   content: "\e004";
+}
+
+.icon-twitter:before {
+  content: "\e005";
+}
+
+.icon-twitter-alt:before {
+  content: "\e006";
+}
+
+.icon-instagram:before {
+  content: "\e007";
+}
+
+.icon-linkedin:before {
+  content: "\e008";
+}
+
+.icon-expand:before {
+  content: "\e009";
+}
+
+.icon-close:before {
+  content: "\e00a";
 }

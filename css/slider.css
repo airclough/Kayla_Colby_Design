@@ -17,12 +17,21 @@
   width: 100%;
 }
 
-#slider .lead {
+#slider .headline {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
   color: #f5f5f5;
   font-size: 2em;
   background: #7bccc1;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #slider .headline {
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    padding: 5px;
+  }
 }

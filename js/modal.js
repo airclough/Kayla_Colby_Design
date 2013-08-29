@@ -3,7 +3,7 @@
   var modal = {
     el: {
       modalWindow  : $( '.modal' ),
-      modalImage   : $( '.image' ),
+      modalImg     : $( '.modalImg' ),
       modalOverlay : $( '.overlay' ),
       items        : $( '.item' ),
       close        : $( '.close' )
@@ -33,7 +33,7 @@
 
       var template = modal.template( $( e.currentTarget ).data( 'modal-img' ) );
 
-      this.el.modalImage.html( template );
+      this.el.modalImg.html( template );
       this.toggleModal();
     },
 
