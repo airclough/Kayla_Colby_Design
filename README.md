@@ -1,4 +1,4 @@
 Kayla Colby Design
 =====
 
-...will update soon, Kayla.
+http://kaylacolbydesign.com/
